@@ -1,0 +1,309 @@
+/* Dark theme styling for txt4GPT File Merger */
+:root {
+    --bg-primary: #1e1e2e;
+    --bg-secondary: #2a2a3c;
+    --bg-tertiary: #313145;
+    --text-primary: #e2e2e2;
+    --text-secondary: #b4b4b4;
+    --accent-primary: #7c5cff;
+    --accent-secondary: #5c4cbb;
+    --danger: #ff5c5c;
+    --success: #5cff7c;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--bg-tertiary);
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--accent-primary);
+}
+
+.language-flags {
+    display: flex;
+    gap: 10px;
+}
+
+.flag {
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.flag:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.drop-zone {
+    border: 2px dashed var(--accent-secondary);
+    border-radius: var(--border-radius);
+    padding: 40px;
+    text-align: center;
+    background-color: var(--bg-secondary);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.drop-zone:hover, .drop-zone.active {
+    border-color: var(--accent-primary);
+    background-color: rgba(124, 92, 255, 0.1);
+}
+
+.drop-zone i {
+    font-size: 48px;
+    color: var(--accent-primary);
+    margin-bottom: 15px;
+}
+
+.drop-zone p {
+    font-size: 18px;
+    color: var(--text-secondary);
+}
+
+.file-list-container {
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.file-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.file-list-header h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.file-list {
+    list-style: none;
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 5px;
+}
+
+.file-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: var(--bg-tertiary);
+    border-radius: var(--border-radius);
+    margin-bottom: 8px;
+    cursor: move;
+    transition: var(--transition);
+}
+
+.file-list li:hover {
+    background-color: rgba(124, 92, 255, 0.1);
+}
+
+.file-list li .file-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.file-list li .file-info i {
+    color: var(--accent-primary);
+    font-size: 18px;
+}
+
+.file-list li .file-info span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-list li .file-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.output-options {
+    display: flex;
+    gap: 20px;
+}
+
+.output-format, .output-folder {
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    flex: 1;
+}
+
+.output-format h3, .output-folder h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.format-options {
+    display: flex;
+    gap: 15px;
+}
+
+.format-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.folder-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.folder-selector input {
+    flex: 1;
+    background-color: var(--bg-tertiary);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 8px 12px;
+    color: var(--text-primary);
+}
+
+button {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button:hover {
+    background-color: var(--bg-secondary);
+}
+
+.primary-btn {
+    background-color: var(--accent-primary);
+    color: white;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.primary-btn:hover {
+    background-color: var(--accent-secondary);
+}
+
+.danger-btn {
+    background-color: rgba(255, 92, 92, 0.2);
+    color: var(--danger);
+}
+
+.danger-btn:hover {
+    background-color: rgba(255, 92, 92, 0.3);
+}
+
+.status-bar {
+    background-color: var(--bg-secondary);
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+.footer {
+    background-color: var(--bg-secondary);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.footer a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+}
