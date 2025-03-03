@@ -2,7 +2,7 @@
 
 ![ContextLoom Logo](resources/icons/CL_logo.png)
 
-**ContextLoom** is a lightweight desktop application designed to merge the content of various files into a single TXT or HTML document. Whether you're working with code, documents, or mixed file types, ContextLoom extracts readable text and consolidates it into one file—perfect for creating a context document for large language models (LLMs) or quick content sharing.
+**ContextLoom** is a lightweight desktop application designed to merge the content of various files into a single TXT or HTML document. Whether you're working with code, documents, or mixed file types, ContextLoom extracts readable text and consolidates it into one file — perfect for creating a context document for large language models (LLMs) or quick content sharing.
 
 Built with [Neutralinojs](https://neutralino.js.org/), ContextLoom is portable, fast, and requires no installation.
 
@@ -10,7 +10,7 @@ Built with [Neutralinojs](https://neutralino.js.org/), ContextLoom is portable, 
 
 ## What is ContextLoom?
 
-Have you ever wanted to discuss multiple files with an LLM, but hit a wall because of file limits or unsupported formats? ContextLoom solves that problem. It takes any number of files—be it code (PHP, Python, JS, etc.), documents (DOCX, PDF, ODT), or other text-containing files—and merges their content into a single, easy-to-use document. Simply upload the result to your chatbot or paste it into a conversation. No more file juggling or format struggles!
+Have you ever wanted to discuss multiple files with an LLM, but hit a wall because of file limits or unsupported formats? ContextLoom solves that problem. It takes any number of files — be it code (PHP, Python, JS, etc.), documents (DOCX, PDF, ODT), or other text-containing files — and merges their content into a single, easy-to-use document. Simply upload the result to your chatbot or paste it into a conversation. No more file juggling or format struggles!
 
 ---
 
@@ -19,7 +19,7 @@ Have you ever wanted to discuss multiple files with an LLM, but hit a wall becau
 - **Drag-and-Drop Simplicity**: Add files effortlessly by dragging them into the app or selecting them manually.
 - **Customizable File Order**: Sort your file list with a drag-and-drop interface to control the merge sequence.
 - **Folder Support**: Process entire folders and choose your output directory with ease.
-- **Flexible Output**: Export your merged content as a `.txt` or `.html` file—or both!
+- **Flexible Output**: Export your merged content as a `.txt` or `.html` file — or both!
 - **Text Extraction**: Extracts readable text from a wide range of file types, including code, documents, and more.
 - **Non-Text Filtering**: Optionally skip non-text files during merging.
 - **Multilingual Interface**: Available in English (EN), Polish (PL), and Italian (IT).
@@ -36,7 +36,7 @@ Have you ever wanted to discuss multiple files with an LLM, but hit a wall becau
 ## System Requirements
 
 - **Operating System**: Windows, Linux, or macOS.
-- **Dependencies**: None—everything’s bundled in the app.
+- **Dependencies**: None — everything’s bundled in the app.
 
 ---
 
@@ -85,7 +85,7 @@ ContextLoom is released under the [MIT License](LICENSE). Feel free to use, modi
 
 ## Contributors
 
-- [micbed86](https://github.com/micbed86) – Lead Developer.
+- [micbed86](https://github.com/micbed86) – Developer.
 
 Want to contribute? Open an issue or submit a pull request—we’d love your help!
 
